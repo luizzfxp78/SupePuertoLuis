@@ -1,0 +1,44 @@
+.container {
+  width: min(90%, 1300px);
+  margin-inline: auto;
+}
+
+.section,
+.section-dark {
+  padding: 120px 0;
+}
+
+.section-dark {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.section-header,
+.history-header,
+.gastronomy-header,
+.tourism-header,
+.traditions-header {
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-tag {
+  color: var(--primary);
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-size: clamp(42px, 6vw, 60px);
+}
+
+.line {
+  width: 80px;
+  height: 3px;
+  margin: 20px 0;
+  background: var(--primary);
+}

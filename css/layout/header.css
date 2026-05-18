@@ -1,0 +1,70 @@
+/* Header */
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 999;
+  transition: background var(--transition), backdrop-filter var(--transition);
+}
+
+.header.scrolled,
+.header.menu-open {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: clamp(12px, 1.8vw, 26px);
+}
+
+.nav-links a {
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: var(--primary-light);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.35rem;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--white);
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.hamburger.is-active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}

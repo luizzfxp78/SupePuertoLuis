@@ -1,0 +1,54 @@
+.btn-primary {
+  display: inline-block;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  padding: 15px 35px;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(20, 184, 196, 0.25);
+}
+
+.timeline-buttons,
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.timeline-buttons {
+  margin-bottom: 3rem;
+}
+
+.timeline-btn,
+.filter-btn {
+  border: 2px solid var(--primary);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--dark);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.timeline-btn {
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+}
+
+.timeline-btn:hover,
+.timeline-btn.active,
+.filter-btn:hover,
+.filter-btn.active {
+  transform: translateY(-3px);
+  background: var(--primary);
+  color: var(--white);
+}
+
+.timeline-btn.active {
+  box-shadow: 0 5px 15px rgba(20, 184, 196, 0.3);
+}

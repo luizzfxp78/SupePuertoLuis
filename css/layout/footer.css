@@ -1,0 +1,14 @@
+.footer {
+  background: #05080f;
+  color: var(--white);
+  padding: 80px 0;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 0.75rem;
+}
+
+.footer a:hover {
+  color: var(--primary-light);
+}

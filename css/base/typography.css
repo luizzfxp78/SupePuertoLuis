@@ -1,0 +1,13 @@
+body {
+  overflow-x: hidden;
+  background: var(--white);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.05;
+}
